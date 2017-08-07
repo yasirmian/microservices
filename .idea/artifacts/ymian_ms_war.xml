@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ymian-ms:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ymian-ms-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ymian-ms:war exploded" />
+    </root>
+  </artifact>
+</component>
