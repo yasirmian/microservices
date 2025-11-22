@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: carpool-chat-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/carpool
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+# WebSocket endpoints are configured at /ws/cp-chat with STOMP destinations under /app
